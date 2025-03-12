@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: flask-m3u-player
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python -m app"
+    envVars:
+      - key: MONGO_URI
+        value: mongodb+srv://medusa:8RB2QKdStaeapkVQ@cluster0.hykx6.mongodb.net/flask_m3u_player
+      - key: SECRET_KEY
+        value: your_generated_secret_key  # Replace with your generated secret key
+      - key: PORT
+        value: 10000
