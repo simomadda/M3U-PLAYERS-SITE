@@ -27,5 +27,3 @@ m3u8_service = M3U8Service(mongo)
 
 from . import routes
 
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=int(os.getenv('10000', 5000)))
