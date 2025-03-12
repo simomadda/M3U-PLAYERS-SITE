@@ -3,7 +3,7 @@ services:
     name: flask-m3u-player
     env: python
     buildCommand: "pip install -r requirements.txt"
-    startCommand: "python -m app"
+    startCommand: "python run.py"
     envVars:
       - key: MONGO_URI
         value: mongodb+srv://medusa:8RB2QKdStaeapkVQ@cluster0.hykx6.mongodb.net/flask_m3u_player
