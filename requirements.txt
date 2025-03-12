@@ -1,3 +1,4 @@
 Flask
 Flask-SQLAlchemy==2.5.1
 Flask-Admin
+flask_pymongo
